@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/background-img.jpg);
+    background-size: cover;
+    font-family: 'montserrat';
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #FEC000;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #000;
+    height: 520px;
+    width: 650px;
+    color: #fff;
+    flex-wrap: wrap;
+    padding: 18px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+label {
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+input {
+    height: 47px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #aaa;
+}
+
+.name, .email {
+    width: 48%;
+    display: inline-flex;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.email {
+    margin-left: 10px;
+}
+
+.pickdate, .hour, .min, .ampm {
+    display: inline-flex;
+}
+
+.pickdate {
+    width: 40%;
+}
+
+.hour, .min, .ampm {
+    width: 17.6%;
+    margin-left: 10px;
+}
+
+select, option {
+    height: 47px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEC000;
+    border: none;
+    font-weight: 700;
+    margin-top: 20px;
+    height: 50px;
+}

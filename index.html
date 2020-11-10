@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reservación de Taxi</title>
+</head>
+<body class="center">
+    <main class="center container">
+        <h1 class="center title">BOOK A CAR</h1>
+        <form action="book-taxi" class="form">
+            <div class="form-div name">
+                <label for="name">NAME</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-div email">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-div phone">
+                <label for="phone">PHONE</label>
+                <input type="number" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-div pickup">
+                <label for="pick">PICKUP LOCATION</label>
+                <input type="text" id="pick" placeholder="Enter ZIP/Location">
+            </div>
+            <div class="form-div destination">
+                <label for="destination">DESTINATION</label>
+                <input type="text" id="destination" placeholder="Enter ZIP/Location">
+            </div>
+            <div class="form-div pickdate">
+                <label for="pickdate">PICKUP DATE</label>
+                <input type="date" name="date" id="pickdate" placeholder="dd/mm/aaaa" required>
+            </div>
+            <div class="form-div hour">
+                <label for="hour">HOUR</label>
+                <select name="hour" id="hour">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="form-div min">
+                <label for="min">MIN</label>
+                <select name="min" id="min">
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+            </div>
+            <div class="form-div ampm">
+                <label for="ampm">AM/PM</label>
+                <select name="ampm" id="ampm">
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+            </div>
+            <button class="form-div submit">
+                BOOK NOW
+            </button>
+        </form>
+    </main>
+</body>
+</html>
